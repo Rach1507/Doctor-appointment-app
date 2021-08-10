@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" android:id="@+id/app_navigation"
+app:startDestination="@id/locationFragment">
+
+
+<fragment android:id="@+id/locationFragment"
+    android:name="com.example.doctorbookingapp.LocationFragmentMain"
+    android:label="Home"
+    tools:layout="@layout/location_fragment_main"
+    tools:ignore="ExtraText">
+
+
+    <action android:id="@+id/action_myHomeFragment_to_myCategoryFragment"
+        app:destination="@id/categoryFragment"
+        />
+
+
+
+</fragment>
+
+
+
+<fragment android:id="@+id/categoryFragment"
+    android:name="com.example.doctorbookingapp.CategoriesFragment"
+    android:label="Search Doctrs"
+    tools:layout="@layout/fragment_categories">
+
+
+    <action android:id="@+id/action_mySecondFragment_to_myThirdFragment"
+        app:destination="@id/docListFragment"/>
+
+
+</fragment>
+
+
+<fragment android:id="@+id/docListFragment"
+    android:name="com.example.doctorbookingapp.ItemFragment"
+    android:label="Find Doctors"
+    tools:layout="@layout/fragment_item_list">
+
+
+    <action android:id="@+id/action_myThirdFragment_to_mySecondFragment"
+        app:popUpTo="@id/categoryFragment"/>
+</fragment>
+
+    
+</navigation>

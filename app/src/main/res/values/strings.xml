@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">doctorBookingApp</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="submit_button">Contained button</string>
+    <string name="submit">Submit</string>
+    <string name="location">LOCATION</string>
+    <string name="kindly_enter_your_location">Kindly enter your location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_for_doctors">search for doctors,specialists,clinics,hospitals..</string>
+    <string name="skin_and_hair">Skin and Hair</string>
+    <string name="general_doctor">General Doctor</string>
+    <string name="child_care">Child Care</string>
+    <string name="women_s_health">Women\'s Health</string>
+    <string name="dentist">Dentist</string>
+    <string name="ent">ENT</string>
+    <string name="ayurvedic">Ayurvedic</string>
+    <string name="homeopathy">Homeopathy</string>
+    <string name="oncologist">Oncologist</string>
+    <string name="orthopedic">Orthopedic</string>
+    <string name="search_doctors">Search Doctors</string>
+
+</resources>

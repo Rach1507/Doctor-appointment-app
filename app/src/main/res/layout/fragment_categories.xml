@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categoryFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green_light"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/outlinedTextField">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="145dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icons8_stethoscope_24" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="348dp"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView"
+
+
+                    android:fontFamily="@font/molengo"
+                    android:gravity="center"
+                    android:text="@string/search_doctors"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+
+
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView2"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:fontFamily="@font/molengo"-->
+                <!--                    android:text="Search By directly typing the doctors name , speciality...balb bla bla"-->
+                <!--                  />-->
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/containedButton1"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+
+                    android:text="@string/general_doctor"
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/containedButton2"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+
+                    android:text="@string/skin_and_hair"
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/containedButton4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+                    android:text="@string/child_care"
+
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/containedButton3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+                    android:text="@string/women_s_health"
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/containedButton5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+                    android:text="@string/dentist"
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/containedButton6"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+                    android:text="@string/ent"
+
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/containedButton8"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+                    android:text="@string/ayurvedic"
+
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/containedButton7"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="30dp"
+
+
+                    android:text="@string/homeopathy"
+                    android:textSize="12sp"
+                    tools:ignore="ButtonStyle" />
+            </TableRow>
+
+
+            <!--            <TableRow-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/containedButton10"-->
+            <!--                    android:layout_width="100dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_margin="30dp"-->
+
+            <!--                    android:text="@string/oncologist"-->
+
+            <!--                    android:textSize="12sp"-->
+            <!--                    tools:ignore="ButtonStyle" />-->
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/containedButton9"-->
+            <!--                    android:layout_width="100dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:layout_margin="30dp"-->
+
+
+            <!--                    android:text="@string/orthopedic"-->
+            <!--                    android:textSize="12sp"-->
+            <!--                    tools:ignore="ButtonStyle" />-->
+            <!--            </TableRow>-->
+
+
+        </TableLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="365dp"
+            android:layout_height="68dp"
+
+
+            android:layout_marginTop="70dp"
+            android:background="@color/white"
+
+            android:hint="@string/search_for_doctors"
+            android:textColorHint="@color/green_dark"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:shadowColor="@color/green_light"
+                app:boxCornerRadiusBottomEnd="80dp"
+                app:boxCornerRadiusBottomStart="30dp"
+
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

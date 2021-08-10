@@ -1,0 +1,3 @@
+include ':medapp'
+include ':app'
+rootProject.name = "doctorBookingApp"
