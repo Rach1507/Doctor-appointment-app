@@ -13,37 +13,55 @@ app:startDestination="@id/locationFragment">
 
 
     <action android:id="@+id/action_myHomeFragment_to_myCategoryFragment"
-        app:destination="@id/categoryFragment"
-        />
-
-
-
-</fragment>
-
-
-
-<fragment android:id="@+id/categoryFragment"
-    android:name="com.example.doctorbookingapp.CategoriesFragment"
-    android:label="Search Doctrs"
-    tools:layout="@layout/fragment_categories">
-
-
-    <action android:id="@+id/action_mySecondFragment_to_myThirdFragment"
-        app:destination="@id/docListFragment"/>
+        app:destination="@id/categoryFragment"/>
 
 
 </fragment>
 
 
-<fragment android:id="@+id/docListFragment"
-    android:name="com.example.doctorbookingapp.ItemFragment"
-    android:label="Find Doctors"
-    tools:layout="@layout/fragment_item_list">
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.doctorbookingapp.CategoriesFragment"
+        android:label="Search Doctrs"
+        tools:layout="@layout/fragment_categories">
 
 
-    <action android:id="@+id/action_myThirdFragment_to_mySecondFragment"
-        app:popUpTo="@id/categoryFragment"/>
-</fragment>
+        <action
+            android:id="@+id/action_mySecondFragment_to_myThirdFragment"
+            app:destination="@id/docListFragment" />
 
-    
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/docListFragment"
+        android:name="com.example.doctorbookingapp.ItemFragment"
+        android:label="Find Doctors"
+        tools:layout="@layout/fragment_item_list">
+
+
+        <action
+            android:id="@+id/action_myThirdFragment_to_mySecondFragment"
+            app:popUpTo="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_docListFragment_to_secondBlankFragment"
+            app:destination="@id/secondBlankFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/secondBlankFragment"
+        android:name="com.example.myapplication.SecondBlankFragment"
+        android:label="SecondBlankFragment" >
+        <action
+            android:id="@+id/action_secondBlankFragment_to_finalfragment"
+            app:destination="@id/finalfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalfragment"
+        android:name="com.example.doctorbookingapp.Finalfragment"
+        android:label="Finalfragment" />
+
+
 </navigation>

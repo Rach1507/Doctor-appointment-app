@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_light"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="365dp"
+            android:layout_height="68dp"
+
+
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:hint="@string/enter_your_email"
+
+            android:textColorHint="@color/green_dark"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EmailTextField"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:shadowColor="@color/green_light"
+                app:boxCornerRadiusBottomEnd="80dp"
+
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NameTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="365dp"
+            android:layout_height="68dp"
+
+
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:hint="@string/enter_your_name"
+            android:textColorHint="@color/green_dark"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:shadowColor="@color/green_light"
+                app:boxCornerRadiusBottomEnd="80dp"
+
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/BookFinal"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="251dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="50dp"
+
+            android:text="@string/book_appointment"
+            app:cornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.831"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="@color/green_light" />
+
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/PickDate3"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="174dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="41dp"
+
+            android:text="@string/pick_date"
+            app:cornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.377"
+            app:rippleColor="@color/green_light" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+
+            android:text="@string/dd_mm_yyyy"
+
+            app:layout_constraintEnd_toStartOf="@+id/PickDate3"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedTextField" />
+
+        <Button
+            android:id="@+id/slot1Button"
+            android:layout_width="113dp"
+            android:layout_height="54dp"
+
+
+            android:text="@string/_6pm_7pm"
+            android:textColor="@color/green_dark"
+            android:textSize="12sp"
+            app:backgroundTint="@color/green_light"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/slot2Button"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.579"
+            tools:ignore="ButtonStyle"
+
+
+
+            />
+
+
+        <Button
+            android:id="@+id/slot4Button"
+            android:layout_width="112dp"
+            android:layout_height="58dp"
+
+
+            android:layout_marginTop="172dp"
+            android:text="@string/_7pm_8pm"
+            android:textColor="@color/green_dark"
+
+            android:textSize="12sp"
+            app:backgroundTint="@color/green_light"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.557"
+            app:layout_constraintStart_toEndOf="@+id/slot3Button"
+            app:layout_constraintTop_toBottomOf="@+id/PickDate3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/slot3Button"
+            android:layout_width="112dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+
+
+            android:layout_marginBottom="120dp"
+            android:text="@string/_5pm_6pm"
+
+            android:textColor="@color/green_dark"
+            android:textSize="12sp"
+            app:backgroundTint="@color/green_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slot1Button"
+            app:layout_constraintVertical_bias="0.208" />
+
+        <Button
+            android:id="@+id/slot2Button"
+            android:layout_width="113dp"
+            android:layout_height="54dp"
+
+
+            android:layout_marginEnd="30dp"
+
+            android:layout_marginRight="30dp"
+            android:background="@color/green_light"
+            android:text="@string/_11am_12pm"
+            android:textColor="@color/green_dark"
+            android:textSize="12sp"
+            app:backgroundTint="@color/green_light"
+            app:layout_constraintBottom_toTopOf="@+id/slot4Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PickDate3"
+            app:layout_constraintVertical_bias="0.44"
+            tools:ignore="ButtonStyle,MissingConstraints" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

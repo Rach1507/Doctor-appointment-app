@@ -19,5 +19,24 @@
     <string name="oncologist">Oncologist</string>
     <string name="orthopedic">Orthopedic</string>
     <string name="search_doctors">Search Doctors</string>
+    <string name="doc_name">doc_name</string>
+    <string name="doc_specialization">doc-specialization</string>
+
+
+    <string name="enter_your_email">Email</string>
+    <string name="enter_your_name">Name</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="pick_date">Pick date</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="_7pm_8pm">7pm-8pm</string>
+    <string name="_6pm_7pm">6pm-7pm</string>
+    <string name="_5pm_6pm">5pm -6pm</string>
+    <string name="_11pm_12pm">11pm-12pm</string>
+    <string name="_11am_12pm">11am-12pm</string>
+    <string name="appointment_confirmed">APPOINTMENT CONFIRMED</string>
+    <string name="appointmentinfo">Your appointment is confirmed!</string>
+    <string name="General">General</string>
+    <string name="Meghana">Meghana</string>
+
 
 </resources>
